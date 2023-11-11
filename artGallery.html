@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" herf="stylesheet.css" type="text/css">
+<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Krithi's abstract</title>
+<style>
+ .container{   
+    height:100%;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(5, 25rem);
+    gap:1rem;
+    
+}
+
+.turn{
+    transform: rotate(90deg);
+    padding:7px;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+} 
+
+.turning{
+transform:rotate(270deg);
+padding:7px;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+img{
+    padding:7px;
+    width:100%;
+    height:100%;
+    object-fit:cover;    
+}   
+
+.bold{
+    font-size:70px;
+}
+
+h1{
+    font-family:cursive;
+    font-size:50px;
+    text-align:center;
+}
+
+.p1{
+    grid-column:2;
+    grid-row:1;
+}
+
+.p2{
+    grid-column:1;
+    grid-row:1 / span 2;
+}
+
+.p3{
+    grid-column:3;
+    grid-row:1;
+}
+
+.p4{
+    grid-column:1 / span 2;
+    grid-row:3 ;
+}
+
+.p5{
+    grid-column:2 / span 2;
+    grid-row:2;
+}
+
+.p6{
+    grid-column:3;
+    grid-row:3;
+}
+</style>
+</head>    
+<body>
+<h1>abstract<div>by</div><div class="bold">KRITHI</div></h1>
+    <div class="container">    
+        <div class="p1"><img src="./pics/IMG_2087.JPG" alt="woman"></div>
+        <div class="p2"><img src="./pics/IMG_2096.JPG" alt="jug"></div>
+        <div class="p3"><img src="./pics/IMG_2107.JPG" alt="petals"></div>
+     
+        <div class="p4"><img src="./pics/IMG_2104.JPG" alt="waterfall" class="turn"></div>
+        <div class="p5"><img src="./pics/IMG_2103.JPG" alt="tiger" class="turning"></div>
+        <div class="p6"><img src="./pics/IMG_2094.JPG" alt="horse"></div>
+    
+</div>
+</body>
+</html> 
