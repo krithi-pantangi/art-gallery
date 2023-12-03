@@ -5,6 +5,20 @@
     <title>Image Gallery</title>    
     <link rel="stylesheet" href="you tube style sheet">    
     <link href="" rel="stylesheet">
+    <script>
+        function preventScroll(event) {
+          event.preventDefault(); // Prevent default behavior (e.g., navigating to the link)
+          
+          // Your custom code to display the full-size image or perform any other action
+          // For example, you could display the image in a modal or lightbox.
+          
+          // For demonstration purposes, log the clicked image's URL
+          const imageUrl = event.target.getAttribute('href');
+          console.log('Clicked image URL:', imageUrl);
+          
+          // Add your logic to display the full-size image or perform other actions here
+        }
+      </script>
 </head>
 <body>
 
@@ -12,78 +26,144 @@
         
         <div class="gallery">
             <div class="gallery__item--godess">
-                <a href="#" class="gallery__link">
-                    <img src="./pics/IMG_2087.JPG" class="gallery__image" />
+                <a href="#" class="gallery__link" alt="0">
+                    <img src="./pics/IMG_2087.JPG" class="gallery__image" / onclick="preventScroll(event);">
                     <div class="gallery__overlay">
                         <span>Durga</span>
                     </div>
                 </a>
             </div>
             <div class="gallery__item--jug">
-                <a href="#" class="gallery__link">
-                    <img src="./pics/IMG_2096.JPG" class="gallery__image" />
+                <a href="#" class="gallery__link" alt="1">
+                    <img src="./pics/IMG_2096.JPG" class="gallery__image" / onclick="preventScroll(event);">
                     <div class="gallery__overlay">
                         <span>jug with fruit</span>
                     </div>
                 </a>
             </div>
             <div class="gallery__item--waterfall">
-                <a href="#" class="gallery__link">
-                    <img src="./pics/IMG_2104.JPG"   class="gallery__image">
+                <a href="#" class="gallery__link" alt="2">
+                    <img src="./pics/IMG_2104.JPG"   class="gallery__image" / onclick="preventScroll(event);">
                     <div class="gallery__overlay">
                         <span>waterfall in rain forest</span>
                     </div>
                 </a>
             </div>
             <div class="gallery__item--tiger">
-                <a href="#" class="gallery__link">
-                    <img src="./pics/IMG_2103.JPG" class="gallery__image">
+                <a href="#" class="gallery__link" alt="3">
+                    <img src="./pics/IMG_2103.JPG" class="gallery__image" / onclick="preventScroll(event);">
                     <div class="gallery__overlay">
                         <span>tiger in bushes</span>
                     </div>
                 </a>
             </div>
             <div class=" gallery__item--horse">
-                <a href="#" class="gallery__link">
-                    <img src="./pics/IMG_2094.JPG" class="gallery__image" />
+                <a href="#" class="gallery__link" alt="4">
+                    <img src="./pics/IMG_2094.JPG" class="gallery__image" / onclick="preventScroll(event);">
                     <div class="gallery__overlay">
                         <span>horse made of colered glass</span>
                     </div>
                 </a>
             </div>
             <div class="gallery__item--petals">
-                <a href="#" class="gallery__link">
-                    <img src="./pics/IMG_2107.JPG" class="gallery__image" />
-                    <div class="gallery__overlay">
-                        <span>abstract of colered petals</span>
-                    </div>
-                </a>                                                            
-            </div>
-            <div class="gallery__item--petals">
-                <a href="#" class="gallery__link">
-                    <img src="./pics/IMG_2107.JPG" class="gallery__image" />
-                    <div class="gallery__overlay">
-                        <span>abstract of colered petals</span>
-                    </div>
-                </a>                                                            
-            </div>
-            <div class="gallery__item--petals">
-                <a href="#" class="gallery__link">
-                    <img src="./pics/IMG_2107.JPG" class="gallery__image" />
+                <a href="#" class="gallery__link" alt="5">
+                    <img src="./pics/IMG_2107.JPG" class="gallery__image" / onclick="openModal(5)">
                     <div class="gallery__overlay">
                         <span>abstract of colered petals</span>
                     </div>
                 </a>                                                            
             </div>
             <div class="gallery__item--wolf">
-                <a href="#" class="gallery__link">
-                    <img src="./pics/IMG_E2097.JPG" class="gallery__image" />
+                <a href="#" class="gallery__link" alt="6">
+                    <img src="./pics/IMG_E2097.JPG" class="gallery__image" / onclick="openModal(6)">
                     <div class="gallery__overlay">
                         <span>furry wolf</span>
                     </div>
                 </a>
             </div>
-            
+            <div class="gallery__item--ship">
+                <a href="#" class="gallery__link" alt="7">
+                    <img src="./pics/IMG_E2093.JPG" class="gallery__image" / onclick="openModal(7)">
+                    <div class="gallery__overlay">
+                        <span>ship wreck</span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item--flamingo">
+                <a href="#" class="gallery__link" alt="8">
+                    <img src="./pics/IMG_E2109.JPG" class="gallery__image" / onclick="openModal(8)">
+                    <div class="gallery__overlay">
+                        <span>flamingo in pond</span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item--pepper">
+                <a href="#" class="gallery__link" alt="9">
+                    <img src="./pics/IMG_E2111.JPG" class="gallery__image" / onclick="openModal(9)">
+                    <div class="gallery__overlay">
+                        <span>pepper house</span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item--flamingo">
+                <a href="#" class="gallery__link" alt="10">
+                    <img src="./pics/IMG_E2109.JPG" class="gallery__image" / onclick="openModal(10)">
+                    <div class="gallery__overlay">
+                        <span>flamingo in pond</span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item--butterflies">
+                <a href="#" class="gallery__link" alt="11">
+                    <img src="./pics/IMG_E2108.JPG" class="gallery__image" / onclick="openModal(11)">
+                    <div class="gallery__overlay">
+                        <span>butterflies from jar</span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item--snowhill">   
+                <a href="#" class="gallery__link" alt="12">
+                    <img src="./pics/IMG_E2099.JPG" class="gallery__image" / onclick="openModal(12)">
+                    <div class="gallery__overlay">
+                        <span>snowing snowhill sunset</span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item--dolphin">
+                <a href="#" class="gallery__link" alt="13">
+                    <img src="./pics/IMG_2101.JPG" class="gallery__image" / onclick="openModal(13)">
+                    <div class="gallery__overlay">
+                        <span>jumping glass dophin</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery__item--fruit">
+                <a href="#" class="gallery__link" alt="14">
+                    <img src="./pics/IMG_E2091.JPG" class="gallery__image" / onclick="openModal(14)">
+                    <div class="gallery__overlay">
+                        <span>fruits</span>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item--eggs">
+                <a href="#" class="gallery__link" alt="15">
+                    <img src="./pics/IMG_E2092.JPG" class="gallery__image" / onclick="openModal(15)">
+                    <div class="gallery__overlay">
+                        <span>easter eggs in bowl</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery__item--rose">
+                <a href="#" class="gallery__link" alt="16">
+                    <img src="./pics/IMG_2106.JPG" class="gallery__image" / onclick="openModal(16)">
+                    <div class="gallery__overlay">
+                        <span>pink rosebud</span>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </div>
 

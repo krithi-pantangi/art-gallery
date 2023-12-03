@@ -1,3 +1,8 @@
+.modal {
+    display: none;
+    /* Additional modal styles */
+  }xxx  
+
 *,
 *:before,
 *:after {
@@ -171,40 +176,123 @@ body {
     .gallery__item--godess {
         grid-column: 2 ;
         grid-row: 1 ;
-        padding: 5px;
+        border: solid;
+        margin: 10px;
     }
 
     .gallery__item--jug {
         grid-column: 1 ;
         grid-row: 1 ;
-        padding: 5px;
+        border: solid;
+        margin: 10px;
     }
 
     .gallery__item--tiger {
         grid-column:1/ span 2 ;
         grid-row: 2;
-        align-items: center;
         border: solid;
+        margin: 10px;
     }
 
     .gallery__item--waterfall {
-        grid-column: 1 / span 1;
+        grid-column: 1 / span 2;
         grid-row: 5 / span 2;
+        border: solid;
+        margin: 10px;
     }
 
     .gallery__item--horse {
         grid-column: 1 / span 1;
         grid-row: 7 / span 2;
+        border: solid;
+        margin: 10px;
     }
 
     .gallery__item--petals {
         grid-column: 2 / span 1;
         grid-row: 7 / span 2;
+        border: solid;
+        margin: 10px;
+    }
+    
+    .gallery__item--wolf {
+        grid-column: 1 / span 2;
+        grid-row: 9 / span 2;
+        border: solid;
+        margin: 10px;
+    }    
+    .gallery__item--dolphin {
+        grid-column: 1 / span 1;
+        grid-row: 11 / span 1;
+        border: solid;
+        margin: 10px;    
+    }
+    
+    .gallery__item--snowhill {
+        grid-column: 2 / span 1;
+        grid-row: 11 / span 1;
+        border: solid;
+        margin: 10px;    
+    }
+    
+    .gallery__item--pepper {
+        grid-column: 1 / span 2;
+        grid-row: 12 / span 2;
+        border: solid;
+        margin: 10px;    
+    }
+
+    .gallery__item--butterflies {
+        grid-column: 1 / span 1;
+        grid-row: 14 / span 1;
+        border: solid;
+        margin: 10px;    
+    }
+
+    .gallery__item--flamingo {
+        grid-column: 2 / span 1;
+        grid-row: 14 / span 1;
+        border: solid;
+        margin: 10px;    
+    }
+
+    .gallery__item--ship {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+        border: solid;
+        margin: 10px;    
+    }
+
+    .gallery__item--fruit {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+        border: solid;
+        margin: 10px;    
+    }
+
+    .gallery__item--eggs {
+        grid-column: 1 / span 2;
+        grid-row: 15 / span 2;
+        border: solid;
+        margin: 10px;    
+    }
+
+    .gallery__item--rose {
+        grid-column: 1 / span 1;
+        grid-row: 17 / span 1;
+        border: solid;
+        margin: 10px;    
     }
 
     .gallery__overlay {
         font-size: 1.25rem;
     }
+}
+
+.font{
+    font-family:cursive;
+    text-align
+    :center;
 }
 
 @media screen and (max-width: 35rem) {

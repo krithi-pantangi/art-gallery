@@ -1,0 +1,120 @@
+<html>
+<body>
+
+<div>
+
+    <h1 .container h1>Krithi's<br>Art<br>Gallery</h1>
+
+    <div class="kpics">
+        <div class="kpic"><img src="./pics/IMG_2087.JPG" alt=""></div>
+        <div class="kpic"><img src="./pics/IMG_2087.JPG" alt=""></div>
+        <div class="kpic"><img src="./pics/IMG_2087.JPG" alt=""></div>
+        <div class="kpic"><img src="./pics/IMG_2087.JPG" alt=""></div>
+        <div class="kpic"><img src="./pics/IMG_2087.JPG" alt=""></div>
+        <div class="kpic"><img src="./pics/IMG_2087.JPG" alt=""></div>
+    </div>
+
+    <div class="popup">
+        <span>&times;</span>
+        <image src="./pics/IMG_2087.JPG" class="gallery__image" alt="">
+    </div>
+
+</div>
+
+<script>
+
+document.querySelectorAll('.kpics img').forEach(image =>{
+    image.onklick = () =>{
+        document.querySelector('.popup').style.diplay = 'block';
+        document.querySelector('.popup img').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('.popup span').onclick = () =>{
+    document.querySelector('.popup').style.diplay = 'none';
+}
+
+</script>
+
+</body>
+</html>
+
+.container{
+    position: relatave;
+    min-height: 100vh;
+    background: #ddd;
+}
+
+.container h1{
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: normal;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container .kpics{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container .kpics .kpic{
+    height: 250px;
+    width: 350px;
+    border: 10px solid #7b02fc;
+    box-shadow: 0 5px 15px rgba(133, 1, 249, 0.997);
+    overflow: auto;
+    cursor: pointer;
+}
+
+.container .kpics .kpic img{
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .kpics .kpic:hover img{
+    transform: scale(1.1);
+}
+
+.container .popup{
+    position: fixed;
+    top: 0; left: 0;
+    background:rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.container .popup span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color:aquamarine;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid blueviolet;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media (max-width:768px){
+    .container .popup img{
+        width: 95%;
+    }    
+}
