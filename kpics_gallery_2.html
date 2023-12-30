@@ -151,9 +151,9 @@
         <div class="kpic"><img src="./pics/rainforest.JPG" alt=""></div>
     </div>
 
-    <div class="popup>
-        <span onClick="popupClose()>&times;</span>
-        <image src="./pics/IMG_2087.JPG" class="gallery__image" alt="">
+    <div class="popup">
+        <span onClick="popupClose()">&times;</span>
+        <img src="" class="gallery__image" alt="">
     </div>
 
 </div>
@@ -161,15 +161,20 @@
 <script>
 
 document.querySelectorAll('.kpics img').forEach(image =>{
-    image.onclick = () =>{
-        document.querySelector('.popup').style.display = 'block';
-        document.querySelector('.popup img').src = image.getAttribute('src');
+    image.onclick = () =>{ popupOpen(image);
+        
     }
 });
 
 function popupClose() {
-    document.querySelector('.popup').style.display = 'none';   
+    document.querySelector('.popup').style.display = 'none';
 }
+
+function popupOpen( image) {
+    document.querySelector('.popup').style.display = 'block';
+        document.querySelector('.popup img').src = image.getAttribute('src');
+}
+
 
 </script>
 
